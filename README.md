@@ -4,64 +4,65 @@
 
 ![Banner Proyek](./image/banner-jam-digital.svg)
 
-### 🏫 Portofolio Proyek Kelompok 1
-**SMKN 9 SURAKARTA • XI TJKT 3**
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Hardware](https://img.shields.io/badge/Hardware-Huidu_HD--W3A-blue.svg)](#)
+[![Display](https://img.shields.io/badge/Panel-P10_LED_Matrix-red.svg)](#)
+
+**Sistem Manajemen Layar Informasi Digital & Jadwal Otomatis Sekolah**  
+Dibuat dan dikelola secara terbuka oleh **Kelompok 1 - XI TJKT 3**
 
 </div>
 
 ---
 
-## 📌 Deskripsi Proyek
-Proyek ini dibuat sebagai portofolio implementasi **Jam Digital Sekolah** menggunakan controller **Huidu HD-W3A** dan software **HD2020**.  
-Fokus utama proyek adalah menampilkan waktu real-time, tanggal, dan identitas sekolah pada panel LED secara rapi dan informatif.
+## 📌 Tentang Proyek
+Proyek ini merupakan portofolio implementasi **Digital Signage & Jam Otomatis Sekolah** menggunakan *controller* cerdas **Huidu HD-W3A** yang diaplikasikan pada panel P10 LED Matrix. 
 
-## 👥 Identitas Tim
+Lebih dari sekadar jam digital biasa, konfigurasi XML yang kami rancang di dalam repositori ini telah dioptimalkan dengan algoritma **Day-Specific Routing** (Routing Penjadwalan Berbasis Hari). Sistem mampu memisahkan program reguler dengan program insidental (seperti Jam Waktu Sholat, jam masuk, waktu literasi, hingga Lagu Indonesia Raya) tanpa *overlap*, *glitch*, atau layar membeku (*freeze*), disesuaikan persis dengan kalender akademik sekolah.
+
+Repositori ini bersifat *Open Source*. Guru, siswa, maupun pengembang lain dipersilakan untuk mengkloning, menganalisa logika *routing* waktu yang kami buat, atau bahkan memodifikasinya untuk kebutuhan masing-masing! 🚀
+
+---
+
+## 👥 Identitas Tim Pengembang
+Proyek ini dirancang, diuji, dan dieksekusi oleh **Kelompok 1**:
 - 🏫 **Sekolah:** SMKN 9 SURAKARTA
 - 🧑‍🎓 **Jurusan/Kelas:** XI TJKT 3
-- 🤝 **Kelompok:** 1
-- 🎯 **Tema:** Jam Digital Sekolah Berbasis Huidu
 
-## 🗂️ Struktur Folder Proyek
-```bash
-.
-├── Docs/
-│   └── Presentasi-Kelompok-1-SMKN9-Surakarta.md
-├── config/
-│   └── hd2020-main-config.xml
-├── image/
-│   ├── banner-jam-digital.svg
-│   └── tampilan-led-sekolah.svg
-├── LICENSE
-└── README.md
-```
+| No | Nama Anggota Tim | Presensi | Peran/Tugas |
+|:---|:---|:---:|:---|
+| 1 | **Alexa Putra P** | 04 | *Hardware & Wiring Setup* |
+| 2 | **Alwanu Zaky R** | 06 | *Lead Programmer & System Logic* |
+| 3 | **Angelin Mata Air P** | 08 | *Data Entry & Schedule Mapping* |
+| 4 | **Bintang Putra P** | 12 | *Quality Control & Testing* |
+| 5 | **M Ibnu Abbad** | 25 | *Hardware Assembly* |
+| 6 | **Nur Kholifah H** | 27 | *Documentation & Design* |
+| 7 | **Rafael Sukma D.R** | 31 | *Network & WiFi Config* |
+| 8 | **Satria Bagus P** | 34 | *Presentation & Public Speaking* |
+| 9 | **Sekar Anindya K** | 35 | *Project Manager* |
 
-## 🖼️ Sumber Image untuk README
-- `image/banner-jam-digital.svg` → banner utama portofolio.
-- `image/tampilan-led-sekolah.svg` → ilustrasi tampilan LED jam digital.
-
-### Preview
-![Tampilan LED](./image/tampilan-led-sekolah.svg)
-
-## ⚙️ Konfigurasi HD2020 (Main Setting)
-File konfigurasi utama ada di:
-- `config/hd2020-main-config.xml`
-
-Isi konfigurasi mencakup:
-- model controller (**HD-W3A**),
-- pengaturan display,
-- sinkronisasi waktu (NTP),
-- dan pembagian layer teks tampilan.
-
-## 📚 Dokumentasi Presentasi
-Folder `Docs/` berisi file presentasi kelompok:
-- `Docs/Presentasi-Kelompok-1-SMKN9-Surakarta.md`
-
-Dokumen ini bisa dijadikan bahan awal untuk dibuat menjadi slide presentasi final.
+*(Catatan: Peran di atas bisa kalian edit kembali sesuai kontribusi nyata masing-masing).*
 
 ---
 
-<div align="center">
+## ✨ Fitur Unggulan
+- 🗓️ **Day-Specific Routing Logic:** Alur program berbeda secara otomatis untuk hari Senin, Selasa, Rabu-Kamis, dan Jumat sesuai jam KBM sesungguhnya.
+- 🕌 **Modul JWS (Jam Waktu Sholat) Terkalibrasi:** Sinkronisasi dinamis algoritma waktu sholat presisi tanpa *memory overflow*.
+- ⚡ **Optimasi Memori Huidu:** Konfigurasi layout dan penggunaan *font* dirancang khusus agar tidak membebani limit memori *chip* W03A.
+- 🎓 **Identitas Sekolah Dinamis:** Menampilkan kelas, nama sekolah, hingga *quotes* berjalan dengan transisi yang mulus *(Do Not Clear: OFF)*.
 
-✨ **Terima kasih sudah mengunjungi portofolio proyek kami!** ✨
+---
 
-</div>
+## 🗂️ Struktur Direktori
+
+```bash
+📦 Proyek-Jam-Digital-Sekolah-Huidu-HD-W3A
+ ┣ 📂 Docs/
+ ┃ ┗ 📜 Presentasi-Kelompok-1-SMKN9-Surakarta.md  # File naskah presentasi kami
+ ┣ 📂 config/
+ ┃ ┗ 📜 hd2020-main-config.xml                    # ⚠️ FILE MASTER PROGRAM (Import ke HD2020)
+ ┣ 📂 image/
+ ┃ ┣ 🖼️ banner-jam-digital.svg
+ ┃ ┗ 🖼️ tampilan-led-sekolah.svg                  # Preview hasil akhir di layar
+ ┣ 📜 LICENSE
+ ┗ 📜 README.md
