@@ -1,0 +1,15 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Banner Portofolio Jam Digital Sekolah</title>
+  <desc id="desc">Banner bertema Huidu HD-W3A untuk proyek jam digital sekolah.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)" rx="20"/>
+  <rect x="80" y="90" width="1040" height="220" rx="16" fill="#020617" stroke="#38bdf8" stroke-width="4"/>
+  <text x="600" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="#22d3ee" font-weight="700">JAM DIGITAL SEKOLAH</text>
+  <text x="600" y="235" text-anchor="middle" font-family="Consolas, monospace" font-size="44" fill="#f8fafc">07:30:00 WIB</text>
+  <text x="600" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#93c5fd">Huidu HD-W3A • Kelompok 1 • SMKN 9 Surakarta</text>
+</svg>
