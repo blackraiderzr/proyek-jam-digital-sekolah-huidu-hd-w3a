@@ -17,10 +17,20 @@
 
 ---
 
-## 💬 Filosofi Proyek
+## 💬 Filosofi Proyek & Alasan Open Source
+
 > *"KARYA BESAR TERLAHIR DARI RUANG KECIL"*
 
 Kutipan yang tayang pada panel LED kami ini bukan sekadar pajangan. Ini adalah manifestasi dari logika sistem kami. Proyek ini membuktikan bahwa keterbatasan *hardware*—sebuah panel *single color* P10 berukuran sempit (32x16 piksel) dan *controller* Huidu W3A dengan memori yang sangat terbatas—bukanlah halangan. Dengan logika *routing* waktu yang ketat, optimasi *font*, dan manajemen memori yang efisien, alat yang sederhana dan "kecil" ini dapat didorong hingga batas maksimalnya untuk menciptakan sebuah mahakarya sistem yang fungsional dan kompleks.
+
+**Mengapa kami membagikan sistem sekompleks ini secara publik?**  
+Hal ini didasari oleh sebuah prinsip yang sangat kami pegang teguh:
+
+> **خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ**  
+> *"Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya."*  
+> — (HR. Ahmad, ath-Thabrani, ad-Daruquthni)
+
+Kami berharap *source code*, algoritma jadwal, dan hasil riset kami di repositori ini bisa bermanfaat, dipelajari, dan dikembangkan lagi oleh siapa pun tanpa harus mengulang kerumitan *trial-and-error* dari titik nol.
 
 ---
 
@@ -32,19 +42,19 @@ Menggunakan *controller* **Huidu HD-W3A** yang mendalangi panel **P10 LED Matrix
 ---
 
 ## 👥 Identitas Tim Pengembang
-Proyek ini dirancang, dikonfigurasi, dan diuji sepenuhnya oleh **Kelompok 1**:
+Proyek ini dirancang, dikonfigurasi, dan diuji sepenuhnya oleh **Kelompok 1**. Berikut adalah struktur tim beserta peran masing-masing:
 
-| No | Nama Anggota Tim | Presensi |
-|:--:|:---|:---:|
-| 1 | **Alexa Putra P** | 04 |
-| 2 | **Alwanu Zaky R** | 06 |
-| 3 | **Angelin Mata Air P** | 08 |
-| 4 | **Bintang Putra P** | 12 |
-| 5 | **M Ibnu Abbad** | 25 |
-| 6 | **Nur Kholifah H** | 27 |
-| 7 | **Rafael Sukma D.R** | 31 |
-| 8 | **Satria Bagus P** | 34 |
-| 9 | **Sekar Anindya K** | 35 |
+| No | Nama Anggota Tim | Presensi | Role / Deskripsi Tugas |
+|:--:|:---|:---:|:---|
+| 1 | **Angelin Mata Air P** | 08 | 👑 **Ketua Kelompok** |
+| 2 | **Alwanu Zaky R** | 06 | 💻 **Lead Programmer** *(Merakit & mengeksekusi full logic sistem, konfigurasi layout, dan sinkronisasi di HD2020)* |
+| 3 | **Bintang Putra P** | 12 | 🔍 **Co-Programmer & QA** *(Melakukan cross-check presisi routing time dan inspeksi layer per screen agar tidak overlap)* |
+| 4 | **Alexa Putra P** | 04 | 🔧 **Hardware Assembly** *(Fokus pada perakitan fisik panel dan kelistrikan)* |
+| 5 | **M Ibnu Abbad** | 25 | 🔧 **Hardware Assembly** *(Fokus pada perakitan fisik panel dan kelistrikan)* |
+| 6 | **Rafael Sukma D.R** | 31 | 🎤 **MC / Presenter Utama** *(Membawakan presentasi dan mengatur alur public speaking tim)* |
+| 7 | **Satria Bagus P** | 34 | 🔬 **Tim Riset** *(Riset parameter hardware, layout, dan data)* |
+| 8 | **Nur Kholifah H** | 27 | 📝 **Dokumentasi & Visual** *(Merekam dokumentasi dan merancang PPT presentasi)* |
+| 9 | **Sekar Anindya K** | 35 | 📝 **Dokumentasi & Visual** *(Merekam dokumentasi dan merancang PPT presentasi)* |
 
 ---
 
