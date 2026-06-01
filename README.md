@@ -44,17 +44,17 @@ Menggunakan *controller* **Huidu HD-W3A** yang mendalangi panel **P10 LED Matrix
 ## 👥 Identitas Tim Pengembang
 Proyek ini dirancang, dikonfigurasi, dan diuji sepenuhnya oleh **Kelompok 1**. Berikut adalah struktur tim beserta peran masing-masing:
 
-| No | Nama Anggota Tim | Presensi | Role / Deskripsi Tugas |
+| No | Nama Anggota Tim | Presensi | Role / Tugas |
 |:--:|:---|:---:|:---|
 | 1 | **Angelin Mata Air P** | 08 | 👑 **Ketua Kelompok** |
-| 2 | **Alwanu Zaky R** | 06 | 💻 **Lead Programmer** *(Merakit & mengeksekusi full logic sistem, konfigurasi layout, dan sinkronisasi di HD2020)* |
-| 3 | **Bintang Putra P** | 12 | 🔍 **Co-Programmer & QA** *(Melakukan cross-check presisi routing time dan inspeksi layer per screen agar tidak overlap)* |
-| 4 | **Alexa Putra P** | 04 | 🔧 **Hardware Assembly** *(Fokus pada perakitan fisik panel dan kelistrikan)* |
-| 5 | **M Ibnu Abbad** | 25 | 🔧 **Hardware Assembly** *(Fokus pada perakitan fisik panel dan kelistrikan)* |
-| 6 | **Rafael Sukma D.R** | 31 | 🎤 **MC / Presenter Utama** *(Membawakan presentasi dan mengatur alur public speaking tim)* |
-| 7 | **Satria Bagus P** | 34 | 🔬 **Tim Riset** *(Riset parameter hardware, layout, dan data)* |
-| 8 | **Nur Kholifah H** | 27 | 📝 **Dokumentasi & Visual** *(Merekam dokumentasi dan merancang PPT presentasi)* |
-| 9 | **Sekar Anindya K** | 35 | 📝 **Dokumentasi & Visual** *(Merekam dokumentasi dan merancang PPT presentasi)* |
+| 2 | **Alwanu Zaky R** | 06 | 💻 **Programmer** *(Konfigurasi HD2020 & Logika Sistem)* |
+| 3 | **Bintang Putra P** | 12 | 🔍 **Co-Programmer & Quality Assurance (QA)** |
+| 4 | **Alexa Putra P** | 04 | 🔧 **Hardware & Perakitan Panel** |
+| 5 | **M Ibnu Abbad** | 25 | 🔧 **Hardware & Perakitan Panel** |
+| 6 | **Rafael Sukma D.R** | 31 | 🎤 **MC & Presenter** |
+| 7 | **Satria Bagus P** | 34 | 🔬 **Tim Riset** |
+| 8 | **Nur Kholifah H** | 27 | 📝 **Dokumentasi & Presentasi (PPT)** |
+| 9 | **Sekar Anindya K** | 35 | 📝 **Dokumentasi & Presentasi (PPT)** |
 
 ---
 
@@ -68,18 +68,51 @@ Proyek ini dirancang, dikonfigurasi, dan diuji sepenuhnya oleh **Kelompok 1**. B
 ├── Software/
 │   └── HD2020.exe                                # Installer resmi software Huidu
 ├── Fonts/
-│   ├── 04b03.ttf                                 # Font pixel mikro (Wajib install)
-│   ├── 04b24.ttf                                 # Font pixel pendukung
-│   └── micross.ttf                               # Small Fonts (Anti-crash untuk JWS)
+│   ├── 04B_03_.TTF                               # Font pixel mikro (Wajib install)
+│   ├── 04B_24_.TTF                               # Font pixel pendukung
+│   ├── arial.ttf                                 # Font standar rendering JWS
+│   └── smalle.fon                                # Small Fonts (Anti-crash untuk JWS)
 ├── image/
 │   ├── banner-jam-digital.svg                    # Aset visual banner
-│   └── tampilan-led-sekolah.svg                  # Ilustrasi hasil render LED
+│   └── ... [Daftar file gambar dokumentasi LED]
 ├── LICENSE                                       # Lisensi penggunaan
 └── README.md                                     # Dokumentasi ini
 ```
 
-### 👁️ Preview Tampilan LED
-![Tampilan LED](./image/tampilan-led-sekolah.svg)
+---
+
+## 📸 Preview Tampilan LED (Real Hardware)
+*Berikut adalah dokumentasi visual asli dari pengujian hardware P10 LED Matrix yang telah berhasil menjalankan sistem penjadwalan kami. Foto disusun berurutan berdasarkan siklus waktu sekolah:*
+
+### 1. Tampilan Default (Layar Utama)
+Tampilan persisten yang berputar terus-menerus selama tidak ada jadwal khusus yang menyela.
+<p align="center">
+  <img src="./image/JAM.jpg" alt="Jam Utama" width="400">
+  <br>
+  <img src="./image/Tanggal.jpg" alt="Tanggal" width="400">
+  <br>
+  <img src="./image/Kelas.jpg" alt="Kelas" width="400">
+</p>
+
+### 2. Program Pagi (Masuk & Berdoa)
+Program *override* yang otomatis memotong layar default tepat pada jam masuk sekolah.
+<p align="center">
+  <img src="./image/Waktu%20Masuk.jpg" alt="Waktu Masuk" width="400">
+  <br>
+  <img src="./image/WaktuMasuk-BahasaJawa.jpg" alt="Waktu Masuk Bahasa Jawa" width="400">
+  <br>
+  <img src="./image/Berdoa.jpg" alt="Berdoa" width="400">
+</p>
+
+### 3. Program Siang (Istirahat & Ishoma)
+Transisi layar penanda waktu rehat yang terkalibrasi dengan bunyi bel sekolah.
+<p align="center">
+  <img src="./image/Istirahat%201.jpg" alt="Istirahat 1" width="400">
+  <br>
+  <img src="./image/Istirahat%202.jpg" alt="Istirahat 2" width="400">
+  <br>
+  <img src="./image/ISHOMA.jpg" alt="ISHOMA" width="400">
+</p>
 
 ---
 
@@ -92,7 +125,7 @@ Untuk menciptakan algoritma *Day-Specific Routing* (Jadwal otomatis bebas tabrak
 **Jika Anda tetap ingin mengopreknya, ikuti langkah berikut:**
 
 1. **Instalasi Software:** Gunakan `HD2020.exe` yang telah kami sediakan di dalam folder `Software/`.
-2. **Instalasi Font Wajib:** Sebelum membuka software, buka folder `Fonts/` lalu *install* semua *font* yang ada (`04b03`, `04b24`, dan `Small Fonts`). Jika langkah ini dilewati, tata letak teks (*layout*) dan Modul Jam Sholat (JWS) dipastikan akan *berantakan* atau *blank* karena perbedaan kalkulasi resolusi matriks.
+2. **Instalasi Font Wajib:** Sebelum membuka software, buka folder `Fonts/` lalu *install* semua *font* yang ada (`04B_03_.TTF`, `04B_24_.TTF`, `arial.ttf`, dan `smalle.fon`). Jika langkah ini dilewati, tata letak teks (*layout*) dan Modul Jam Sholat (JWS) dipastikan akan *berantakan* atau *blank* karena perbedaan kalkulasi resolusi matriks.
 3. **Import File:** Buka HD2020 ➔ Pilih `File` ➔ `Import` ➔ Arahkan ke file `hd2020-main-config.xml` di dalam folder `config/`.
 4. **Analisa & Modifikasi:** Anda kini bisa membedah kerumitan struktur *looping* program kelompok kami.
 5. **Kirim ke Panel:** Hubungkan WiFi PC Anda ke *controller* panel, klik ikon **Sync Time**, lalu tekan **Send**.
